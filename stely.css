@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&family=Oswald:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@400;700&family=Oswald:wght@700&family=Poppins:wght@600&display=swap');
   
   :root{
     --azul:#001b40;
-    --ceu:#00bedd;
+    --ceu:#6C63FE;
   }
   
   *{
@@ -95,7 +95,7 @@
   }
   .home{
     min-height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url(../pagine/assest/barco_frente.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url(../assest/barco_frente.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -193,7 +193,7 @@
     position: absolute;
     bottom: -25%; left: 50%;
     transform: translateX(-50%);
-    border-top: 70vh solid #fff;
+    border-top: 40vh solid #fff;
     width: 120%;
     border-radius: 50%;
     z-index: -1;
@@ -212,6 +212,8 @@
   }
   .about .row .content h3{
     font-size: 3rem;
+    padding-top: 5rem;
+
     color: var(--azul);
   }
   .about .row .content p{
@@ -222,7 +224,7 @@
   .about .row .content button{
     height: 3.5rem;
     width: 17rem;
-    background: var(--azul);
+    background:var(--ceu);
     color: #fff;
     border:none;
     border-radius: 5rem;
@@ -322,6 +324,67 @@
   
   }
   
+
+
+
+  .contact{
+    background: #333;
+  }
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.contact .row .imagem img{
+  width: 50vw;
+  height: 70vh;
+}
+.contact .row .form-container {
+width: 50%;
+padding-right: 6rem;
+}
+.contact .row .form-container input, textarea{
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: none;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: var(--azul);
+  font-size: 1.6rem;
+  transition: .2s;
+}
+.contact .row .form-container textarea{
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.contact .row .form-container input:focus, textarea:focus {
+  border: .3rem solid var(--ceu);
+}
+
+.contact .row .form-container input[type="submit"]{
+  width: 17rem;
+  background: var(--ceu);
+  color: #fff;
+}
+.contact h1{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
   @media(max-width:768px){
     html{
       font-size: 55%;
