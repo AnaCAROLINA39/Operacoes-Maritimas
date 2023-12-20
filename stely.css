@@ -69,7 +69,7 @@
     margin: 0 1rem;
   }
   header .navbar ul li a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--azul);
     transition: .2s;
   }
@@ -193,7 +193,7 @@
     position: absolute;
     bottom: -25%; left: 50%;
     transform: translateX(-50%);
-    border-top: 50vh solid #fff;
+    border-top: 70vh solid #fff;
     width: 120%;
     border-radius: 50%;
     z-index: -1;
